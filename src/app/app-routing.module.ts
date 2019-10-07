@@ -4,10 +4,11 @@ import { RadarComponent } from './routes/radar/radar.component';
 import { ForecastComponent } from './routes/forecast/forecast.component';
 import { RealComponent } from './routes/real/real.component';
 import { AppComponent } from './app.component';
+import { LayoutTemplateComponent } from './layout/layout-template/layout-template.component';
 
 const routes: Routes = [
   {path: '',
-  component: AppComponent,
+  component: LayoutTemplateComponent,
   children: [
   {path: '',redirectTo: 'real',pathMatch: 'full'},
   {path: 'forecast',component: ForecastComponent,data:{title: '预报天气'}},

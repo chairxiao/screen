@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
+// import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,6 +12,7 @@ import zh from '@angular/common/locales/zh';
 import { RadarComponent } from './routes/radar/radar.component';
 import { ForecastComponent } from './routes/forecast/forecast.component';
 import { RealComponent } from './routes/real/real.component';
+import { LayoutTemplateComponent } from './layout/layout-template/layout-template.component';
 
 registerLocaleData(zh);
 
@@ -20,17 +21,18 @@ registerLocaleData(zh);
     AppComponent,
     RadarComponent,
     ForecastComponent,
-    RealComponent
+    RealComponent,
+    LayoutTemplateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgZorroAntdModule,
+    // NgZorroAntdModule,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: zh_CN }],
+  // providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
