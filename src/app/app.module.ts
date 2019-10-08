@@ -13,6 +13,7 @@ import { RadarComponent } from './routes/radar/radar.component';
 import { ForecastComponent } from './routes/forecast/forecast.component';
 import { RealComponent } from './routes/real/real.component';
 import { LayoutTemplateComponent } from './layout/layout-template/layout-template.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 
 registerLocaleData(zh);
 
@@ -22,7 +23,8 @@ registerLocaleData(zh);
     RadarComponent,
     ForecastComponent,
     RealComponent,
-    LayoutTemplateComponent
+    LayoutTemplateComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
