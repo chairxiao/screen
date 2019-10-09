@@ -1,40 +1,115 @@
-#current-temp-big{
-    display: inline-block;
-    
-    width: 100%;
-    
-    text-align: center;
-    color: #fff;
-#ctb{
-    font-size: 12rem;
-    // font-weight: bold;
-}	
-#ctbicon{
+:host-context(.header1) {
+  .city {
+    color: red;
+  }
+}
+
+.current-temp-big {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+
+  .ctbicon {
     position: relative;
-    top: -40px; left: -5px;
-    
+    top: -3rem;
+    left: -5px;
+
     font-weight: 100;
     font-size: 4rem;
     vertical-align: unset;
-    }
+  }
+
+  .status {
+    position: relative;
+    top: 0;
+    left: -4rem;
+    font-weight: 100;
+    font-size: 2rem;
+    vertical-align: unset;
+  }
 }
 
-#temp-div{
-    position: fixed;
-    bottom: 40px
+.temp-div {
+  position: fixed;
+  bottom: 8px
 }
-.wi{
-    font-size: 45px;
-}
-.main{
-    padding-top: 80px;
-    width: 100%;
-    min-height: 1660px;
 
-    background-image: url('./../../../assets/images/bg/bgpic-lightning.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.one-day{
+// :host /deep/ .header p{
+//     color: #fff !important;
+// }
+
+.main {
+  background-image: url('./../../../assets/images/bg/bgpic-sunny.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .ctb {
+    font-size: 8rem;
+    // font-weight: bold;
+  }
+
+  .one-day {
     color: #fff;
+
+    .week {
+      font-size: 1rem;
+    }
+
+    .temperature {
+      font-size: 1.2rem;
+    }
+    img{
+      width: 60%
+    }
+    .wi {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (min-width: 1365px) {
+  .main {
+    .ctbicon {
+      position: relative;
+      top: -10rem;
+      left: -5px;
+
+      font-weight: 100;
+      font-size: 10rem;
+      vertical-align: unset;
+    }
+
+    .status {
+      position: relative;
+      top: 0;
+      left: -10rem;
+      font-weight: 100;
+      font-size: 6rem;
+      vertical-align: unset;
+    }
+
+    .ctb {
+      font-size: 26rem;
+      // font-weight: bold;
+    }
+
+    .one-day {
+      color: #fff;
+
+      .week {
+        font-size: 2rem;
+      }
+
+      .temperature {
+        font-size: 3rem;
+      }
+      img{
+        width: 100%
+      }
+      .wi {
+        font-size: 4rem;
+      }
+    }
+  }
 }

@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { registerLocaleData } from '@angular/common';
+import { registerLocaleData, LocationStrategy, HashLocationStrategy } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { RadarComponent } from './routes/radar/radar.component';
 import { ForecastComponent } from './routes/forecast/forecast.component';
@@ -33,6 +33,9 @@ registerLocaleData(zh);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule
+  ],
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   // providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]
