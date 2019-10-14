@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout-template.component.less']
 })
 export class LayoutTemplateComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
