@@ -1,22 +1,22 @@
 <nz-layout>
-    <nz-header>
-      <h2>江门市</h2>
-    </nz-header>
-    <nz-content>
-        <router-outlet></router-outlet>
-    </nz-content>
-    <nz-footer>
-      <div class="logo"></div>
-      <ul nz-menu nzTheme="light" nzMode="horizontal">
-        <li nz-menu-item nzSelected>
-          <a routerLink="/forecast">预报图</a>
-        </li>
-        <li nz-menu-item>
-          <a routerLink="/real">实况图</a>
-        </li>
-        <li nz-menu-item>
-          <a routerLink="/radar">雷达图</a>
-        </li>
-        </ul>
-    </nz-footer>
-  </nz-layout>
+  <nz-header>
+    <h2 class="location">江门市</h2>
+  </nz-header>
+  <nz-content>
+    <router-outlet></router-outlet>
+  </nz-content>
+  <nz-footer>
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="light" nzMode="horizontal">
+      <li nz-menu-item nzSelected>
+        <a routerLink="/real">实况图</a>
+      </li>
+      <li nz-menu-item>
+        <a routerLink="/forecast">预报图</a>
+      </li>
+      <li nz-menu-item>
+        <a routerLink="/radar">雷达图</a>
+      </li>
+    </ul>
+  </nz-footer>
+</nz-layout>
