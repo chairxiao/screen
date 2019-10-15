@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./radar.component.less']
 })
 export class RadarComponent implements OnInit {
-  array = [1, 2, 3, 4];
-  effect = 'scrollx';
+  array = [1, 2, 3, 4,5,6,7];
+
   constructor() { }
 
   ngOnInit() {
