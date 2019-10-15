@@ -1,10 +1,11 @@
-<div nz-row>
-    <div nz-col nzSpan="24">
-        <nz-carousel [nzEffect]="effect">
-            <div nz-carousel-content *ngFor="let index of array">
-                <h3>{{ index }}</h3>
-                <img src="assets/images/FY2G1909221900PJ5.GIF">
-            </div>
-        </nz-carousel>
+<div class="main">
+    <div nz-row>
+        <div nz-col nzSpan="24">
+            <nz-carousel nzAutoPlay nzAutoPlaySpeed="1500">
+                <div nz-carousel-content *ngFor="let index of array">
+                    <img src="assets/images/FY2G1909221900PJ5.GIF">
+                </div>
+            </nz-carousel>
+        </div>
     </div>
-</div>
+    </div>
