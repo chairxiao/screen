@@ -540,12 +540,6 @@
 @list-item-meta-avatar-margin-right: @padding-md;
 @list-item-meta-title-margin-bottom: @padding-sm;
 
-@media (min-width: 1366px){
-.container {
-    max-width: 1366px;
-    height: 1660px;
-}
-}
 
 .main{
     padding-top: 80px;
@@ -558,26 +552,39 @@
     height: 100vh;
     }
 }
+
 .ant-carousel .slick-dots li button {
     width: 30px;
     height: 30px;
     padding: 8px;
     color: black;
-    font-size: 12px;
     background: #fff;
     border: 0;
+    font-size: 13px;
     border-radius: 1px;
     outline: none;
     cursor: pointe;
   }
-  
   .ant-carousel .slick-dots li.slick-active button {
     width: 40px;
     background: #fff139;
   }
+  @media(min-width: 1365px){
+    .ant-carousel .slick-dots li button {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    font-size: 18px;
+    }
+    .ant-carousel .slick-dots li.slick-active button {
+      width: 70px;
+      background: #fff139;
+    }
+  }
+ 
   
   .ant-carousel .slick-dots-bottom{
-    bottom: 40px;
+    bottom: 60px;
   }
   .ant-carousel .slick-dots li {
     margin: 0 4px;
@@ -585,7 +592,7 @@
   
   @media (min-width: 1365px) {
     .main {
-      height: 1660px;
+     height: 1660px;
     }
   }
   

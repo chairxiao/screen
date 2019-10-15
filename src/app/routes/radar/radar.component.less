@@ -1,9 +1,13 @@
 [nz-carousel-content]{
   max-width: 100vw;
-    height: 975px;
     overflow: hidden;
   }
 
+  @media(min-width:1365px){
+    [nz-carousel-content]{
+    height: 975px;
+    }
+  }
   @media(max-width:1365px){
     [nz-carousel-content]{
     height: 360px;
@@ -14,5 +18,4 @@
   }
   .ant-carousel .slick-slide img{
     max-width: 100vw;
-    // max-height: 100%
   }
